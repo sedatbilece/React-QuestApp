@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
-import "./post.scss";
-import PostElement from "./PostElement";
+
 
 function Post() {
     const [error, setError] = useState(null);
@@ -38,10 +37,10 @@ function Post() {
         return (//page div
             <ul>
                 {postList.map(post => (
-                    <li key={post.id} className="li-post">
-                        
-                        <PostElement title={post.title} text={post.text}/>
-                        
+                    <li key={post.id}>
+                        {post.title}
+                        <hr></hr>
+                        {post.text}
                     </li>
                 ))}
             </ul>
