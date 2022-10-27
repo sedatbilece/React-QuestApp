@@ -6,7 +6,7 @@ function Home() {
         
 
         <Post />
-        <Post />
+        
         </div>
     );
     }

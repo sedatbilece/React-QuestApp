@@ -40,7 +40,7 @@ function Post() {
                 {postList.map(post => (
                     <li key={post.id} className="li-post">
                         
-                        <PostElement title={post.title} text={post.text}/>
+                        <PostElement  userId={post.userId} userName={post.userName} title={post.title} text={post.text}/>
                         
                     </li>
                 ))}
